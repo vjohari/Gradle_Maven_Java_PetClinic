@@ -14,7 +14,9 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 ```
 git clone https://github.com/vjohari/Gradle_Maven_Java_PetClinic.git
-cd spring-petclinic
+cd Gradle_Maven_Java_PetClinic
+./gradlew build
+or
 ./mvnw package
 java -jar target/*.jar
 ```
