@@ -15,9 +15,14 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 ```
 git clone https://github.com/vjohari/Gradle_Maven_Java_PetClinic.git
 cd Gradle_Maven_Java_PetClinic
-./gradlew build
+set PATH=C:\Program Files\Zulu\zulu-17\bin;%PATH%
+set JAVA_HOME=C:\Program Files\Zulu\zulu-17
+
+gradlew clean build -x test
 or
-./mvnw package
+gradlew clean assemble -x test
+or
+mvnw clean package
 java -jar target/*.jar
 ```
 
