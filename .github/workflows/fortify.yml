@@ -65,7 +65,7 @@ jobs:
           chmod +x gradlew
           scancentral package $PACKAGE_OPTS -o package.zip
         env:
-          PACKAGE_OPTS: "-bt gradlew clean build -oss"
+          PACKAGE_OPTS: "-bt gradlew -oss"
 
       # Start Fortify on Demand SAST scan and wait until results complete. For more information on FoDUploader commands, see https://github.com/fod-dev/fod-uploader-java
       # TODO: Update ENV variables for your application and create the necessary GitHub Secrets.  Helpful hints:
