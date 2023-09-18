@@ -33,4 +33,4 @@ jobs:
     #  with:
     #    arguments: build
     - name: Running Gradle Wrapper
-      run: gradlew clean build -x test
+      run: ./gradlew clean build -x test
