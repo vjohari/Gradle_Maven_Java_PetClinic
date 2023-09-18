@@ -33,4 +33,6 @@ jobs:
     #  with:
     #    arguments: build
     - name: Running Gradle Wrapper
-      run: ./gradlew clean build -x test
+      run: |
+        chmod +x gradlew
+        ./gradlew clean build -x test
